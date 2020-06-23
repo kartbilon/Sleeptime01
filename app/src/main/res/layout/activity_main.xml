@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateNow"
+            android:padding="10dp"
+            android:textSize="30sp"
+            android:textColor="#00FF00"
+            android:background="#000000"
+            />
+
+<!--        <TextClock-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="30sp"-->
+<!--            android:format12Hour="HH:mm:ss"-->
+<!--            android:format24Hour="HH:mm:ss"-->
+<!--            android:textColor="#00FF00"-->
+<!--            android:background="#000000"-->
+<!--            />-->
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오늘의 수면시간"
+        android:textColor="#010101"
+        android:textSize="30sp" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="OnImage"
+        app:srcCompat="@drawable/clock" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="수면 시작"
+        android:onClick="startChronometer"
+        android:background="#00FF00"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="기상"
+        android:onClick="pauseChronometer"
+        android:background="#FF0000"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:onClick="resetChronometer"
+        android:background="#00BFFF"
+        android:text="초기화"
+        android:layout_marginBottom="5dp"/>
+
+
+</LinearLayout>
