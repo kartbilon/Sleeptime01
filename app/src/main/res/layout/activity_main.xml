@@ -24,16 +24,16 @@
             android:background="#000000"
             />
 
-<!--        <TextClock-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:padding="10dp"-->
-<!--            android:textSize="30sp"-->
-<!--            android:format12Hour="HH:mm:ss"-->
-<!--            android:format24Hour="HH:mm:ss"-->
-<!--            android:textColor="#00FF00"-->
-<!--            android:background="#000000"-->
-<!--            />-->
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="30sp"
+            android:format12Hour="HH:mm:ss"
+            android:format24Hour="HH:mm:ss"
+            android:textColor="#00FF00"
+            android:background="#000000"
+            />
 
     </LinearLayout>
 
